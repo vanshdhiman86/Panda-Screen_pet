@@ -1,4 +1,8 @@
+
 from tkinter import Tk, HIDDEN, NORMAL, Canvas
+from pygame import mixer
+mixer.init(44100)
+d2 = mixer.Sound("panda4.mp3")
 
 def toggle_eyes():
     current_state = c.itemcget(pupil_left , 'state')
@@ -26,6 +30,7 @@ def toggle_tongue():
     	c.tonque_out = True#change
     	c.itemconfigure(tongue_tip , state = NORMAL)
     	c.itemconfigure(tongue_main , state = NORMAL)
+    	d2.play()
     else:
         c.itemconfigure(tongue_tip , state = HIDDEN)
         c.itemconfigure(tongue_main , state = HIDDEN)
