@@ -1,4 +1,3 @@
-
 from tkinter import Tk, HIDDEN, NORMAL, Canvas
 from pygame import mixer
 mixer.init(44100)
