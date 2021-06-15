@@ -18,6 +18,8 @@ pygame
 * Sad
 * Funny (on double click)
 
+
+
 <img src="images\s1.jpg" width="400">
 <img src="images\s2.jpg" width="400">
 <img src="images\s3.png" width="400">
